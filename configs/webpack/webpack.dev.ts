@@ -19,7 +19,8 @@ const config: webpack.Configuration = merge(baseConfig, {
 		port: 5000,
 		contentBase: paths.build,
 		compress: true,
-		open: true
+		open: true,
+		historyApiFallback: true
 	}
 });
 
