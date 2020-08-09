@@ -1,12 +1,17 @@
 import React from "react";
 import { render, RenderResult } from "@testing-library/react";
-import App from "../src/App";
+import ThemeWrapper from "@containers/ThemeWrapper";
+import MockComponent from "./mocks/MockComponent";
 
 let documentBody: RenderResult;
 
-describe("<App />", () => {
+describe("<ThemeWrapper />", () => {
 	beforeEach(() => {
-		documentBody = render(<App />);
+		documentBody = render(
+			<ThemeWrapper>
+				<MockComponent />
+			</ThemeWrapper>
+		);
 	});
 	it("matches snapshot", () => {
 		const { baseElement } = documentBody;

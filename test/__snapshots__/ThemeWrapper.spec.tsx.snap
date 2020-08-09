@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ThemeWrapper /> matches snapshot 1`] = `
+<body
+  class="light-mode"
+>
+  <div
+    class="Toaster"
+    id="react-toast"
+  >
+    <span
+      class="Toaster__manager-top"
+      style="max-width: 560px; position: fixed; z-index: 5500; pointer-events: none; margin: 0px auto; text-align: center; top: 0px; right: 0px; left: 0px;"
+    />
+    <span
+      class="Toaster__manager-top-left"
+      style="max-width: 560px; position: fixed; z-index: 5500; pointer-events: none; top: 0px; left: 0px;"
+    />
+    <span
+      class="Toaster__manager-top-right"
+      style="max-width: 560px; position: fixed; z-index: 5500; pointer-events: none; top: 0px; right: 0px;"
+    />
+    <span
+      class="Toaster__manager-bottom-left"
+      style="max-width: 560px; position: fixed; z-index: 5500; pointer-events: none; bottom: 0px; left: 0px;"
+    />
+    <span
+      class="Toaster__manager-bottom"
+      style="max-width: 560px; position: fixed; z-index: 5500; pointer-events: none; margin: 0px auto; text-align: center; bottom: 0px; right: 0px; left: 0px;"
+    />
+    <span
+      class="Toaster__manager-bottom-right"
+      style="max-width: 560px; position: fixed; z-index: 5500; pointer-events: none; bottom: 0px; right: 0px;"
+    />
+  </div>
+  <div>
+    <p>
+      Mock Component
+    </p>
+  </div>
+</body>
+`;
