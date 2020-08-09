@@ -28,7 +28,7 @@ const Header = (props: FlexProps) => {
 		>
 			<Flex align="center" mr="5">
 				<Heading as="h1" size="lg">
-					Chakra UI
+					Quiz
 				</Heading>
 			</Flex>
 
