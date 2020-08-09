@@ -1,0 +1,5 @@
+{
+	"WELCOME": "/",
+	"DASHBOARD": "/dashboard",
+	"NOTFOUND": "/not-found"
+}
