@@ -1,4 +1,5 @@
 {
+	"extends": "./tsconfig.alias.json",
 	"compilerOptions": {
 		"outDir": "build",
 		"target": "es6",
@@ -13,6 +14,8 @@
 		"allowSyntheticDefaultImports": true,
 		"keyofStringsOnly": true,
 		"esModuleInterop": true,
+		"importsNotUsedAsValues": "preserve",
+		"resolveJsonModule": true,
 		"skipLibCheck": true,
 		"typeRoots": ["node_modules/@types", "src/@types"]
 	},
@@ -24,8 +27,8 @@
 		"acceptance-tests",
 		"webpack",
 		"jest",
-		"src/setupTests.ts",
-		"./node_modules/**/*"
+		"internals",
+		"__test__"
 	],
 	"include": ["./src/**/*", "@types"]
 }

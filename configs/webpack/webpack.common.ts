@@ -1,10 +1,12 @@
 import path from "path";
 import webpack from "webpack";
+import merge from "webpack-merge";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import ForkTsCheckerWebpackPlugin from "fork-ts-checker-webpack-plugin";
+import webpackAlias from "./webpack.alias";
 import paths from "../paths";
 
-const config: webpack.Configuration = {
+const config: webpack.Configuration = merge(webpackAlias, {
 	entry: {
 		app: paths.src
 	},
@@ -58,6 +60,6 @@ const config: webpack.Configuration = {
 		timings: true,
 		version: false
 	}
-};
+});
 
 export default config;

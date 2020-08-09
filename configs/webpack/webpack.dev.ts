@@ -1,5 +1,5 @@
 import webpack from "webpack";
-import { merge as webpackMerge } from "webpack-merge";
+import merge from "webpack-merge";
 import WebpackDevServer from "webpack-dev-server";
 import baseConfig from "./webpack.common";
 import paths from "../paths";
@@ -12,7 +12,7 @@ declare module "webpack" {
 	}
 }
 
-const config: webpack.Configuration = webpackMerge(baseConfig, {
+const config: webpack.Configuration = merge(baseConfig, {
 	mode: "development",
 	devtool: "#inline-source-map",
 	devServer: {
