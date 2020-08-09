@@ -1,7 +1,18 @@
 import "core-js/stable";
 import React from "react";
 import ReactDOM from "react-dom";
+// import { AppContainer as ReactHotAppContainer } from "react-hot-loader";
+import Root from "@containers/Root";
+import { configureStore, history } from "@store/configureStore";
 
-import App from "./App";
+const store = configureStore();
 
-ReactDOM.render(<App />, document.getElementById("root"));
+// const AppContainer = process.env.PLAIN_HMR ? Fragment : ReactHotAppContainer;
+const AppContainer = React.Fragment;
+
+ReactDOM.render(
+	<AppContainer>
+		<Root store={store} history={history} />
+	</AppContainer>,
+	document.getElementById("root")
+);
